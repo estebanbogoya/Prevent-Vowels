@@ -9,7 +9,7 @@ export default function Listener() {
 
   function keyPress(evt) {
     let valor = evt.key.toLowerCase();
-    const blockChars = 'aeiou " "';
+    const blockChars = 'aeiou';
     if (blockChars.includes(valor)) {
       evt.preventDefault();
       console.log('Pusiste una vocal:', valor);
